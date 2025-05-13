@@ -10,7 +10,7 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
 from base64 import b64decode
 from bs4 import BeautifulSoup
-log_channel = (-1002456765218)
+log_channel = (-1002607772171)
 
 def decrypt(enc):
     enc = b64decode(enc.split(':')[0])
