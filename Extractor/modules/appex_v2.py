@@ -10,7 +10,7 @@ from Extractor import app
 import os
 from config import SUDO_USERS
 import base64
-log_channel = (-1002456765218)
+log_channel = (-1002607772171)
 def decrypt(enc):
     enc = b64decode(enc.split(':')[0])
     key = '638udh3829162018'.encode('utf-8')
