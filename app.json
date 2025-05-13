@@ -28,7 +28,7 @@
       "required": false
     },
     "CHANNEL_ID": {
-      "description": "-1002456765218",
+      "description": "-1002607772171",
       "required": true
     },
     "MONGO_URL": {
