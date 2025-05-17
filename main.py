@@ -29,6 +29,8 @@ from pyrogram import Client, idle
 from logging.handlers import RotatingFileHandler
 from config import API_ID, API_HASH, BOT_TOKEN, OWNER_ID, SUDO_USERS, MONGO_URL, CHANNEL_ID, PREMIUM_LOGS  # Directly import required variables
 from Extractor.modules import ALL_MODULES
+from web import app
+import threading
 
 # Configure logging
 LOGGER = logging.getLogger(__name__)
@@ -55,4 +57,9 @@ if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     loop.run_until_complete(sumit_boot())
 
+def run_web():
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
 
+if __name__ == "__main__":
+    threading.Thread(target=run_web).start()
+    app.run()
