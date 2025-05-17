@@ -29,7 +29,7 @@ from pyrogram import Client, idle
 from logging.handlers import RotatingFileHandler
 from config import API_ID, API_HASH, BOT_TOKEN, OWNER_ID, SUDO_USERS, MONGO_URL, CHANNEL_ID, PREMIUM_LOGS  # Directly import required variables
 from Extractor.modules import ALL_MODULES
-from web import app
+from web import web_app
 import threading
 
 # Configure logging
@@ -53,13 +53,14 @@ async def sumit_boot():
     await idle()
     LOGGER.info("» ɢᴏᴏᴅ ʙʏᴇ ! sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ.")
 
-if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(sumit_boot())
-
 def run_web():
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    web_app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
 
 if __name__ == "__main__":
-    threading.Thread(target=run_web).start()
-    app.run()
+    threading.Thread(target=run_web).start()  # Start web server in background
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(sumit_boot())     # Start Pyrogram bot
+
+
+
+
