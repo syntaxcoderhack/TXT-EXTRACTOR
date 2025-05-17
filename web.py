@@ -1,8 +1,8 @@
 from flask import Flask
 
-app = Flask(__name__)
+web_app = Flask(__name__)
 
-@app.route('/')
+@web_app.route('/')
 def home():
     return "Bot is running by SPIDY UNIVERSE"
 
