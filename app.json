@@ -1,26 +1,26 @@
 {
-  "name": "𝖤𝖣𝖴𝖢𝖠𝖳𝖨𝖮𝖭 𝖧𝖴𝖡",
+  "name": "TXT EXTRACTOR",
   "description": "Telegram Bot using Pyrogram",
   "repository": "https://github.com/DAXXTEAM",
   "env": {
     "API_ID": {
-      "description": "16253557",
+      "description": "",
       "required": true
     },
     "API_HASH": {
-      "description": "42b34442e52dc3e07b3e0783389be8cb",
+      "description": "",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "8015663864:AAGLRoTMXkj9Ndq4PL7oKLo0AtaYT68rxCM",
+      "description": "",
       "required": true
     },
     "BOT_USERNAME": {
-      "description": "hai_kuch_kya_krega_jaan_kr",
+      "description": "",
       "required": true
     },
     "OWNER_ID": {
-      "description": "1366730834",
+      "description": "",
       "required": true
     },
     "SUDO_USERS": {
@@ -28,11 +28,11 @@
       "required": false
     },
     "CHANNEL_ID": {
-      "description": "-1002607772171",
+      "description": "",
       "required": true
     },
     "MONGO_URL": {
-      "description": "mongodb+srv://creatorar30:fdINvMPYXYwUyHdq@cluster0.pbaou.mongodb.net/?retryWrites=true&w=majority",
+      "description": "",
       "required": true
     },
     "PREMIUM_LOGS": {
