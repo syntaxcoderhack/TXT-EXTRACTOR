@@ -35,7 +35,19 @@ Just send `/start` — all features are handled via buttons.
 </p>
 
 ---
+### 🔑 Required Environment Variables (.env)
+You need to set the following variables for the bot to run:
 
+```env
+API_ID=123456
+API_HASH=your_api_hash_here
+BOT_TOKEN=your_bot_token_here
+```
+
+> **Where to get these?**  
+• Get `API_ID` and `API_HASH` from [my.telegram.org](https://my.telegram.org) under "API Development Tools".  
+• Get `BOT_TOKEN` from [BotFather](https://t.me/BotFather) after creating your Telegram bot.
+---
 ### ☁️ Deploy to Render
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Popeye68/TXT-EXTRACTOR)
 
