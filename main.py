@@ -49,7 +49,7 @@ async def sumit_boot():
     for all_module in ALL_MODULES:
         importlib.import_module("Extractor.modules." + all_module)
 
-    LOGGER.info("» ʙᴏᴛ ᴅᴇᴘʟᴏʏ sᴜᴄᴄᴇssғᴜʟʟʏ ✨ 🎉")
+    LOGGER.info("» ʙᴏᴛ ᴅᴇᴘʟᴏʏ sᴜᴄᴄᴇssғᴜʟʟʏ 🚀🎉")
     await idle()
     LOGGER.info("» ɢᴏᴏᴅ ʙʏᴇ ! sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ.")
 
