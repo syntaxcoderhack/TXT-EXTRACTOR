@@ -94,14 +94,17 @@ Feel free to **fork this repo**, add your own tweaks, and build your own version
 ---
 
 ### ⭐ GitHub Buttons
+
 <p align="center">
   <a href="https://github.com/Popeye68/TXT-EXTRACTOR/stargazers">
-    <img src="https://img.shields.io/github/stars/Popeye68/TXT-EXTRACTOR?style=for-the-badge&label=Stars&logo=github"/>
+    <img src="https://img.shields.io/github/stars/Popeye68/TXT-EXTRACTOR.svg?style=for-the-badge&label=Stars&logo=github" />
   </a>
   <a href="https://github.com/Popeye68/TXT-EXTRACTOR/network/members">
-    <img src="https://img.shields.io/github/forks/Popeye68/TXT-EXTRACTOR?style=for-the-badge&label=Forks&logo=github"/>
+    <img src="https://img.shields.io/github/forks/Popeye68/TXT-EXTRACTOR.svg?style=for-the-badge&label=Forks&logo=github" />
   </a>
 </p>
+
+
 
 
 ---
