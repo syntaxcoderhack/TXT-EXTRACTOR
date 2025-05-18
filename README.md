@@ -36,17 +36,25 @@ Just send `/start` — all features are handled via buttons.
 
 ---
 ### 🔑 Required Environment Variables (.env)
-You need to set the following variables for the bot to run:
+You need to set the following variables for the bot to run. These are read using `os.environ.get()` in the code.
 
 ```env
-API_ID=123456
-API_HASH=your_api_hash_here
-BOT_TOKEN=your_bot_token_here
+API_ID=123456               # Get from https://my.telegram.org
+API_HASH=your_api_hash     # Get from https://my.telegram.org
+BOT_TOKEN=your_bot_token   # Get from https://t.me/BotFather
+OWNER_ID=123456789         # Your Telegram user ID
+SUDO_USERS=123456789 987654321  # Space-separated admin user IDs
+MONGO_URL=mongodb+srv://user:pass@cluster.mongodb.net/...  # MongoDB connection URI
+CHANNEL_ID=-100xxxxxxxxxx  # Telegram channel ID with -100 prefix
 ```
 
 > **Where to get these?**  
-• Get `API_ID` and `API_HASH` from [my.telegram.org](https://my.telegram.org) under "API Development Tools".  
-• Get `BOT_TOKEN` from [BotFather](https://t.me/BotFather) after creating your Telegram bot.
+• `API_ID` & `API_HASH` → [my.telegram.org](https://my.telegram.org) → API Development Tools  
+• `BOT_TOKEN` → [@BotFather](https://t.me/BotFather)  
+• `OWNER_ID`, `SUDO_USERS` → Get your Telegram ID from [@userinfobot](https://t.me/userinfobot)  
+• `CHANNEL_ID` → Right-click channel > Copy ID (if bot is admin)  
+• `MONGO_URL` → From your MongoDB Atlas project dashboard
+
 ---
 ### ☁️ Deploy to Render
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Popeye68/TXT-EXTRACTOR)
