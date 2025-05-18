@@ -1,4 +1,4 @@
-# Python Based Docker
+
 # Python Based Docker
 FROM python:latest
 
